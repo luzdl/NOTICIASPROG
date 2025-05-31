@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias SA Nacional - Inicio</title>
+    <link rel="stylesheet" href="./ASSETS/DEPORTES.css">
+    <style>
+        body {
+            background-color: #f5f5f0;
+        }
+
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 46, 109, 0.1);
+            border: 1px solid #e1e8ed;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 82, 193, 0.15);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #0052cc;
+        }
+
+        .news-title-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            background: rgba(0, 82, 204, 0.8);
+            color: white;
+            padding: 8px 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #0052cc;
+            margin: 0 0 12px 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .news-text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a4a4a;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .news-category {
+            display: inline-block;
+            background-color: #0052cc;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: #0052cc; color: white;">
+        <img src="./ASSETS/img/logo_noticias_sa_white.png" alt="Logo del Canal de Noticias" class="logo">
+        <div>
+            <h1>Noticias SA Nacional</h1>
+        </div>
+    </header>
+
+    <nav style="background-color: #003b8e;">
+        <ul>
+            <li><a href="./HOME.html" style="color: white;">Inicio</a></li>
+            <li><a href="./DEPORTES.html" style="color: white;">Deportivas</a></li>
+            <li><a href="./INTERNACIONAL.html" style="color: white;">Internacionales</a></li>
+            <li><a href="./CONTACTO.html" style="color: white;">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="news-container">
+            <!-- Noticia 1 -->
+            <div class="news-card">
+                <div class="news-title-overlay">Gobierno y docentes reanudan negociaciones</div>
+                <img src="./IMAGENES/protesta.jpeg" alt="Docentes en protesta" class="news-image">
+                <div class="news-content">
+                    <span class="news-category">Educación</span>
+                    <p class="news-text">Tras semanas de protestas, los gremios docentes y el Ministerio de Educación retoman el diálogo para garantizar el retorno a clases presenciales y revisar el presupuesto para el sector.</p>
+                </div>
+            </div>
+
+            <!-- Noticia 2 -->
+            <div class="news-card">
+                <div class="news-title-overlay">Lanzan programa de becas universitarias</div>
+                <img src="./IMAGENES/beca.jpg" alt="Estudiantes becados" class="news-image">
+                <div class="news-content">
+                    <span class="news-category">Juventud</span>
+                    <p class="news-text">La SENACYT anunció un nuevo programa de becas para carreras STEM, beneficiando a más de 2,000 estudiantes de todo el país con matrícula completa y apoyo económico mensual.</p>
+                </div>
+            </div>
+
+            <!-- Noticia 3 -->
+            <div class="news-card">
+                <div class="news-title-overlay">Se inaugura el Corredor de las Playas</div>
+                <img src="./IMAGENES/corredor.jpg" alt="Corredor de las playas" class="news-image">
+                <div class="news-content">
+                    <span class="news-category">Infraestructura</span>
+                    <p class="news-text">El nuevo tramo vial promete reducir el tiempo de viaje entre Panamá y San Carlos en más de 40 minutos. La obra beneficiará al turismo y la economía de la región oeste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: linear-gradient(135deg, #0052cc, #003b8e); color: white;">
+        <div class="footer-links">
+            <ul>
+                <li><a href="./HOME.html" style="color: white;">Inicio</a></li>
+                <li><a href="./DEPORTES.html" style="color: white;">Deportivas</a></li>
+                <li><a href="./INTERNACIONAL.html" style="color: white;">Internacionales</a></li>
+                <li><a href="./CONTACTO.html" style="color: white;">Contacto</a></li>
+            </ul>
+        </div>
+        <div style="text-align: center; padding-top: 15px; font-size: 0.9rem;">
+            © 2025 Noticias SA Nacional. Todos los derechos reservados.
+        </div>
+    </footer>
+</body>
+</html>
