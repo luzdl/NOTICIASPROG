@@ -1,0 +1,196 @@
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7DEB9;
+    font-family: "Times New Roman", serif;
+}
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+header {
+    background-color: #F5BF6E;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+header h1 {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+nav {
+    background-color: #755B35;
+    font-family: Tahoma, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #F7DEB9;
+}
+
+/* =========================
+   SECCIÓN PRINCIPAL
+   ========================= */
+
+section {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+article {
+    background-color: #C29857;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto de resaltado al posicionarse sobre la tarjeta */
+article:hover {
+    transform: translateY(-5px); /* Levanta ligeramente la tarjeta */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+    border-color: #000101; /* Borde negro */
+    background-color: #C29857;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Transición para la imagen */
+}
+
+article:hover img {
+    transform: scale(1.02); /* Ligero zoom en la imagen */
+}
+
+article h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    transition: color 0.3s ease; /* Transición para el título */
+}
+
+article:hover h3 {
+    color: #000000; /* Color negro al hacer hover */
+}
+
+article p {
+    margin: 10px 0 0 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+article a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+    background-color: #756A58;
+    font-family: Tahoma, sans-serif;
+    font-size: 0.8em;
+    color: #909090;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #444;
+}
+
+.footer-links {
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    article {
+        width: calc(50% - 20px); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    article {
+        width: 100%; /* 1 columna en móviles */
+    }
+}
